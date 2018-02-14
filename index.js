@@ -1,5 +1,8 @@
 const express = require('express');
+const mongoose = require('mongoose');
 require('./services/authServices');
+
+mongoose.connect();
 
 const route = require('./routes/authRoutes');
 
